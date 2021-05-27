@@ -1,7 +1,7 @@
 // Test driven Development. -> Define the testcase before implementation.
 #define CATCH_CONFIG_MAIN 
 
-#define "Sender_Stream.hpp"
+#define "Sender_stream.hpp"
 #define "Sender/Sender_Stream.h"
 
 TEST_CASE("Testcase to validate postive range value printed in console") 
