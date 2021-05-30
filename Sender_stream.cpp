@@ -1,5 +1,5 @@
 // Test driven Development. -> Define the testcase before implementation.
-#include CATCH_CONFIG_MAIN 
+#define CATCH_CONFIG_MAIN 
 
 #include "testsender/catch.hpp"
 #include "Sender/Sender_Stream.c"
