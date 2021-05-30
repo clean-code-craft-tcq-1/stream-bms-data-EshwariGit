@@ -2,7 +2,7 @@
 #include CATCH_CONFIG_MAIN 
 
 #include "testsender/catch.hpp"
-#include "Sender/Sender_Stream.h"
+#include "Sender/Sender_Stream.c"
 
 TEST_CASE("Testcase to validate postive range value printed in console") 
 {
