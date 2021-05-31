@@ -6,12 +6,14 @@
 
 TEST_CASE("Testcase to check input data from file") 
 {
- // REQUIRE(tobedefined(3,4,4)== 1);
+ inputvalue inputvalue= FileInputType;
+ REQUIRE(Read_Input_Data(inputvalue) == PASS);
 }
 
 TEST_CASE("Testcase to check if the console print is happening periodically") 
 {
- // REQUIRE(tobedefined(3,4,4)== 1);
+inputvalue inputvalue = FileInputType;
+REQUIRE(Read_Input_Data(inputvalue) == PASS);
 }
 
 
