@@ -3,7 +3,7 @@
 
 #include "testsender/catch.hpp"
 #include "Sender/Sender_Stream.h"
-#include "Sender/Sender_Stream.c"
+
 
 TEST_CASE("Testcase to check input data from file") 
 {
