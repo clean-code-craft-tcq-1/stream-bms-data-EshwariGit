@@ -41,7 +41,7 @@ Bms_result inputvalue(BMS_inputtype inputvalue)
 {
 
     Bms_result FileReadSuccess = FAIL;
-    FileReadSuccess=(*BMSDataRead[inputvalue])(Temperature,StateOfChargeVal);
+    FileReadSuccess=(*BMSDataRead[inputvalue])(Temperature,StateOfCharge);
     return FileReadSuccess;
 
 
@@ -51,7 +51,7 @@ Bms_result outputvalue(BMS_outputtype outputvalue)
 {
 
     Bms_result Status = FAIL;
-    Status=(*BMSoutput[outputvalue])(Temperature,StateOfChargeVal, filevalue);
+    Status=(*BMSoutput[outputvalue])(Temperature,StateOfCharge, filevalue);
     return Status;
 
 }
