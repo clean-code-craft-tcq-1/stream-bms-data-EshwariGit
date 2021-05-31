@@ -51,7 +51,7 @@ Bms_result outputvalue(BMS_outputtype outputvalue)
 {
 
     Bms_result Status = FAIL;
-    Status=(*BMSoutput[outputvalue])(Temperature,StateOfCharge, filevalue);
+    Status=(*BMSoutput[outputvalue])(Temperature,StateOfCharge);
     return Status;
 
 }
