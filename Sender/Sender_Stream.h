@@ -42,7 +42,7 @@ typedef enum{
 Bms_result dataread(float Temperature[],float StateOfCharge[]);
 Bms_result outputtoconsole(float Temperature[],float StateOfCharge[]);
 Bms_result inputvalue(BMS_inputtype inputvaluefetch);
-Bms_result outputvalue(BMS_outputtype outputvalue);
+Bms_result outputvalue(BMS_outputtype outputvaluefetch);
 
 
 /*
