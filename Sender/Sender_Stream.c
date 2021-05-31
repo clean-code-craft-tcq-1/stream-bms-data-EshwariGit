@@ -9,7 +9,7 @@ float StateOfCharge[BMS_DATA] = {};
 int filevalue = 0;
 
 Bms_result (*BMSDataRead[])(float Temperature[],float StateOfCharge[])={dataread};
-Bms_result(*BMSoutput[])(float Temperature[],float StateOfCharge[])={printtoconsole};
+Bms_result(*BMSoutput[])(float Temperature[],float StateOfCharge[])={outputtoconsole};
 
 Bms_result dataread(float Temperature[],float StateOfCharge[])
 {
