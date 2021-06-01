@@ -7,17 +7,17 @@
 
 TEST_CASE("Testcase to check input data from file") 
 {
- BMS_inputtype inputvaluefetch= FileInputType;
- REQUIRE(inputvalue (inputvaluefetch) == PASS);
+ //BMS_inputype inputvaluefetch= FileInputType;
+ REQUIRE(inputvalue (FileInputType) == PASS);
 }
 
 TEST_CASE("Testcase to check if the console print is happening periodically") 
 {
  
-BMS_inputtype inputvaluefetch = FileInputType;
-BMS_outputtype outputvaluefetch = printtoconsole;
-REQUIRE(inputvalue (inputvaluefetch) == PASS);
-REQUIRE(outputvalue (outputvaluefetch) == PASS);
+// BMS_inputtype inputvaluefetch = FileInputType;
+// BMS_outputtype outputvaluefetch = printtoconsole;
+REQUIRE(inputvalue (FileInputType) == PASS);
+REQUIRE(outputvalue (printtoconsole) == PASS);
 }
 
 
