@@ -7,7 +7,7 @@
 
 TEST_CASE("Testcase to check input data from file") 
 {
- //BMS_inputype inputvaluefetch= FileInputType;
+ BMS_inputype inputvaluefetch= FileInputType;
  REQUIRE(inputvalue (FileInputType) == PASS);
 }
 
