@@ -11,13 +11,6 @@
  * TypeDef handling Section
  **********************************************************************************************************************
 */
-
-
-typedef struct {
-float min;
-float max;
-}bms_data;
-
 typedef enum
 {
 	FAIL,
