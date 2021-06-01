@@ -13,13 +13,10 @@ Bms_result(*BMSoutput[])(float Temperature[],float StateOfCharge[])={outputtocon
 
 Bms_result dataread(float Temperature[],float StateOfCharge[])
 {
-
     float TemperatureTemp,StateOfChargeVal;
-
     Bms_result Status= FAIL;
     int filevalue = 0;
     FILE * file= fopen("./Sender/Sender_Text.txt","r");  
-
     if (file) {
         for(int iterate_counter=0;fscanf(file, "%f\t\t%f\n", &TemperatureTemp,&StateOfChargeVal)!=EOF ;iterate_counter++)
         {
@@ -27,7 +24,6 @@ Bms_result dataread(float Temperature[],float StateOfCharge[])
             Temperature[iterate_counter]=TemperatureTemp;
             StateOfCharge[iterate_counter]=StateOfChargeVal;
         }
-
 
         Status= PASS;
     }
@@ -60,7 +56,7 @@ Bms_result outputtoconsole(float Temperature[],float StateOfCharge[])
 {
     for(int i=0;i<20;i++)
     {
-        printf("Temp value is %f and StateOfCharge value is %f\n",Temperature[i],StateOfCharge[i]);
+        printf("Temperature value is %f and StateOfCharge value is %f\n",Temperature[i],StateOfCharge[i]);
     }
     return PASS;
 
