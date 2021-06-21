@@ -74,3 +74,4 @@ This section lists the minimum functionality of the Sender and Receiver.
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using the GitHub workflow yml files.
 
 
+# Receiver
