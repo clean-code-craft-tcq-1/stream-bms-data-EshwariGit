@@ -74,4 +74,37 @@ This section lists the minimum functionality of the Sender and Receiver.
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using the GitHub workflow yml files.
 
 
-# Receiver
+# BMS Receiver Usage Manual
+
+BSM Receiver program will get the BSM parameters stream from console, performs statistical operations and provides the results to the console
+
+## Structure
+
+bms_sender   
+        `bms_statistics_calculator.py` -> Functions to perform Minimum, Maximum & Simple Moving of last five values of BMS Stream   
+        `bms_input_handler.py`    -> Functions to verify input parameters from BMS Sender  
+        `bms_output_handler.py`   -> Functions to send BMS Statistics of received BMS stream  
+        `bms_receiver.py`       -> Receive & Compute BMS statistics for BMS stream
+        `bms_sender_test.py`  -> BMS receiver test file
+
+## Program Usage
+Function call:  
+
+`bms_receiver(bms_parameters_with_range,
+                                      num_of_readings, output_type, format_type)`  
+
+`bms_parameters_with_range`:- Input the BMS parameters for receiver  
+`bms_output`:- Select where BSM statistics data needs to be sent/output(Supported: console)   
+`format_type`:- Select format based on BMS stream input method(Supported: custom)   
+`num_of_readings`:- Number of required bsm readings  
+
+Example:-
+
+`bms_receiver({'Temperature': {'min': 0, 'max': 45}, 'StateOfCharge': {'min': 20, 'max': 80}}, 15, 'console', 'custom')`
+
+### Sample Output 1 
+
+ 
+
+
+
