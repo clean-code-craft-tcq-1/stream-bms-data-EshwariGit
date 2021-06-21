@@ -115,4 +115,4 @@ Calculations are skipped for out of range BMS readings.
 
 Below is the output of successful Integration  
 
- 
+![output 2](https://github.com/Aruna1396/stream-bms-data-EshwariGit/blob/ded08bebe671c46120b45634008cc15c1c47c3b6/bms_receiver/docs/sender_receiver_integration.png)
