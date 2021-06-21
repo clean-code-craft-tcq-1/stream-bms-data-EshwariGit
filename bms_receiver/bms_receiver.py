@@ -25,4 +25,4 @@ def bms_receiver(bms_parameters_with_range, max_bms_inputs, bms_output, input_fo
 
 
 if __name__ == '__main__':
-    bms_receiver({'Temperature': {'min': 0, 'max': 45}, 'StateOfCharge': {'min': 20, 'max': 80}}, 15, 'console', 'custom')
+    bms_receiver({'Temperature': {'min': 0, 'max': 45}, 'StateOfCharge': {'min': 20, 'max': 80}}, 20, 'console', 'custom')
