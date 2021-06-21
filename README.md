@@ -108,3 +108,11 @@ Example:-
 ![output 1](https://github.com/Aruna1396/stream-bms-data-EshwariGit/blob/2c3627e73a2f5d717d4645b0ca64f2ff5da9f463/bms_receiver/docs/BMS_Receiver_Output.png)  
 
 
+# BMS Sender Receiver Integration  
+
+For Testing purposes, BMS Streaming is limited to 20 values. As the Sender streams the BMS data to console, BMS receiver, validates the input BMS stream, calculates & displays BMS statistics for valid inputs.  
+Calculations are skipped for out of range BMS readings.  
+
+Below is the output of successful Integration  
+
+ 
