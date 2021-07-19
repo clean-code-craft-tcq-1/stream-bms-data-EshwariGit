@@ -72,3 +72,47 @@ This section lists the minimum functionality of the Sender and Receiver.
 ## Quality Parameters
 
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using the GitHub workflow yml files.
+
+
+# BMS Receiver Usage Manual
+
+BSM Receiver program will get the BSM parameters stream from console, performs statistical operations and provides the results to the console
+
+## Structure
+
+bms_sender   
+        `bms_statistics_calculator.py` -> Functions to perform Minimum, Maximum & Simple Moving of last five values of BMS Stream   
+        `bms_input_handler.py`    -> Functions to verify input parameters from BMS Sender  
+        `bms_output_handler.py`   -> Functions to send BMS Statistics of received BMS stream  
+        `bms_receiver.py`       -> Receive & Compute BMS statistics for BMS stream
+        `bms_sender_test.py`  -> BMS receiver test file
+
+## Program Usage
+Function call:  
+
+`bms_receiver(bms_parameters_with_range,
+                                      num_of_readings, output_type, format_type)`  
+
+`bms_parameters_with_range`:- Input the BMS parameters for receiver  
+`bms_output`:- Select where BSM statistics data needs to be sent/output(Supported: console)   
+`format_type`:- Select format based on BMS stream input method(Supported: custom)   
+`num_of_readings`:- Number of required bsm readings  
+
+Example:-
+
+`bms_receiver({'Temperature': {'min': 0, 'max': 45}, 'StateOfCharge': {'min': 20, 'max': 80}}, 15, 'console', 'custom')`
+
+### Sample Output 1 
+
+ 
+![output 1](https://github.com/Aruna1396/stream-bms-data-EshwariGit/blob/2c3627e73a2f5d717d4645b0ca64f2ff5da9f463/bms_receiver/docs/BMS_Receiver_Output.png)  
+
+
+# BMS Sender Receiver Integration  
+
+For Testing purposes, BMS Streaming is limited to 20 values. As the Sender streams the BMS data to console, BMS receiver, validates the input BMS stream, calculates & displays BMS statistics for valid inputs.  
+Calculations are skipped for out of range BMS readings.  
+
+Below is the output of successful Integration  
+
+![output 2](https://github.com/Aruna1396/stream-bms-data-EshwariGit/blob/ded08bebe671c46120b45634008cc15c1c47c3b6/bms_receiver/docs/sender_receiver_integration.png)
